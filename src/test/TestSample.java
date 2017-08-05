@@ -2,6 +2,7 @@ package test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 public class TestSample {
@@ -15,7 +16,7 @@ public class TestSample {
 		
 		Assert.assertEquals(driver.getTitle(), "Google");
 		System.out.println(driver.getTitle());
-		
+		Reporter.log("Page title: " + driver.getTitle());
 		driver.quit();
 		
 	}
