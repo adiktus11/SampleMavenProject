@@ -8,7 +8,7 @@ public class TestSample {
 	
 	@Test
 	public void TestOne() {
-		System.out.println("This is a sample test.");
+		System.out.println("Welcome to Jenkins!");
 		
 		WebDriver driver = new FirefoxDriver();
 		driver.get("http://www.google.com/");
